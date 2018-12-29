@@ -1,6 +1,4 @@
-# Example Project
-
-## Reproducible Research with R and RStudio
+# Examples for Reproducible Research with R and RStudio (Third Edition)
 
 Christopher Gandrud
 
