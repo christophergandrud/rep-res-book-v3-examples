@@ -1,0 +1,20 @@
+---
+title: "Example Beamer Slideshow"
+author: "Christopher Gandrud"
+date: "12/29/2018"
+output: beamer_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,
+                      fig.align = 'center')
+```
+
+## The Figure
+
+```{r DSFertPlot, echo=FALSE, warning=FALSE, out.width='60%', out.height='60%'}
+# Run source code to create scatter plot
+source("analysis/scatter-uds-fert.R")
+```
+
+

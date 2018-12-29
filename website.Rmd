@@ -1,17 +1,16 @@
-# Fertilizer Consumption
-
-Christopher Gandrud
-20 October 2014
-
------------
+---
+title: "Fertilizer Consumption"
+author: "Christopher Gandrud"
+date: "12/29/2018"
+output: html_document
+---
 
 ## Fertilizer Consumption (kilograms per hectare of arable land) in 2003
 
-### Data is from the
-[World Bank](http://data.worldbank.org/indicator/AG.CON.FERT.ZS)
+Note: Data is from the [World Bank](https://data.worldbank.org/indicator/AG.CON.FERT.ZS)
 
 ```{r CreategvisGeoMap, echo=FALSE, message=FALSE, results='asis'}
-source("Analysis/GoogleVisMap.R")
+source("analysis/googlevis-map.R")
 ```
 
 -----------

@@ -1,0 +1,56 @@
+---
+title: "An Example LaTeX Article with RMarkdown"
+author: "Christopher Gandrud"
+date: "12/29/2018"
+output: bookdown::pdf_document2
+bibliography: 
+- main.bib
+- packages.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      fig.align = 'center',
+                      out.width = '60%')
+
+# pkg_to_install is created in 00-setup.Rmd
+pkg_to_cite <- c("rmarkdown", "ggplot2", "rio")
+
+# generate a BibTeX database automatically for some R packages
+knitr::write_bib(pkg_to_cite, 'packages.bib')
+```
+
+\begin{abstract}
+    Here is an example of a knit-able article class LaTeX document.
+\end{abstract}
+
+```{r DemPlot, echo=FALSE, warning=FALSE, fig.cap='Mean UDS Scores vs. Fertilizer Consumption'}
+# Run source code to create scatter plot
+source("analysis/scatter-uds-fert.R")
+```
+
+# The Graph
+
+I gathered data from [@Pemstein2010] on countries' democracy level. They
+call their democracy measure the Unified Democracy Score (UDS). I also gathered
+data from the [@WorldBank2013] on fertilizer consumption.[^fert_explain] Figure \@ref(fig:DemPlot) shows the mean UDS scores over time for all of the countries in their sample plotted against the natural logarithm of their fertilizer consumption.
+
+# Appendix
+
+This document was created using the R version `r paste0(version$major, '.', version$minor)` 
+and the R package
+*rmarkdown* [@R-rmarkdown]. It also relied on the R packages *ggplot2*
+[@R-ggplot2] and *rio* [@R-rio]. The document can be
+completely reproduced from source files available on GitHub at:
+<https://github.com/christophergandrud/rep-res-book-v3-examples>.
+
+The R session info is:
+
+```{r SessionInfo, echo=FALSE, results='asis'}
+toLatex(sessionInfo())
+```
+
+# References
+
+
+[^fert_explain]: The data is in kilograms per hectare of arable land.

@@ -1,8 +1,8 @@
 ################
 # Download Agricultural methane emissions (% of total) from WDI
 # Christopher Gandrud
-# Updated 7 January 2013
-# For more information see: http://data.worldbank.org/indicator
+# Updated 29 December 2018
+# For more information see: https://data.worldbank.org/indicator
 ################
 
 # Load WDI

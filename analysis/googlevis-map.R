@@ -27,7 +27,7 @@ fc_map <- gvisGeoChart(data = sub_data,
                         locationvar = "country",
                         colorvar = "log_consumption",
                         options = list(
-                            colors = "[0xECE7F2, 0xA6BDDB, 0x2B8CBE]",
+                            colors = "[#ECE7F2, #A6BDDB, #2B8CBE]",
                             width = "780px",
                             height = "500px")
                     )

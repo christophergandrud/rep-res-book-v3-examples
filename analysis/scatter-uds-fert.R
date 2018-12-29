@@ -22,4 +22,4 @@ p_uds_fert <- ggplot(main_data, aes(x = log(fert_consumption), y = uds)) +
         ylab("Democracy Score\n") + xlab("\nLog Fertilizer Consumption") +
         theme_minimal(base_size = 15)
 
-p_uds_fert
+print(p_uds_fert)
