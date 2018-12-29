@@ -1,0 +1,35 @@
+\documentclass{beamer}
+
+\begin{document}
+
+%% Title page inforamtion
+\title{Example Beamer/\emph{knitr} Slideshow}
+\author{\href{mailto:gandrud@hertie-schoolorg}{Christopher Gandrud}}
+
+%%% Title slide
+\frame{
+  \titlepage
+}
+
+%%% The figure
+\section{The Figure}
+\begin{frame}[fragile]
+  \frametitle{Mean UDS Scores vs. Fertilizer Consumption}
+\begin{figure}
+<<UDSFertPlot, echo=FALSE, warning=FALSE, out.width='7cm', out.height='7cm'>>=
+# Run source code to create scatter plot
+source("Analysis/ScatterUDS_Fert.R")
+@
+\end{figure}
+\end{frame}
+
+\begin{frame}[fragile]
+	\frametitle{R Session Info}
+{\scriptsize
+<<SessionInfo, echo=FALSE, results='asis'>>=
+toLatex(sessionInfo())
+@
+}
+\end{frame}
+
+\end{document}
