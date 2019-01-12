@@ -44,7 +44,7 @@ description <- c("ISO 2 letter country code",
                  )
 
 # Vector of variable sources
-Sources <- c("",
+sources <- c("",
              "",
              "",
              "World Bank Development Indicators",
@@ -52,7 +52,7 @@ Sources <- c("",
              )
 
 # Combine vectors into a table
-descriptions_bound <- cbind(variable, description, Sources)
+descriptions_bound <- cbind(variable, description, sources)
 
 # Create an xtable object from descriptions
 descriptions_table <- xtable(descriptions_bound)

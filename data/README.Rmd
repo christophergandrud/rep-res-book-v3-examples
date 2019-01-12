@@ -1,12 +1,12 @@
 # Data Gathering Files for Example Project
 
-## Reproducible Research with R and RStudio
+## Reproducible Research with R and RStudio (Third Edition)
 
 Christopher Gandrud
 
 CRC Press/Chapman & Hall division of Taylor & Francis
 
-20 October 2014
+12 January 2019
 
 ---
 
@@ -17,7 +17,6 @@ Use GNU Make to run the files and create the data set (version 3.81). See
 Chapter 6 for more details.
 
 The following session was used:
-
 
 ```{r echo=FALSE}
 sessionInfo()
