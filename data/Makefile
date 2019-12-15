@@ -23,11 +23,11 @@ all: $(OUT_FILES)
 $(RDIR)/%.Rout: $(RDIR)/%.R
 	R CMD BATCH $<
 
-# Remove R Out Files
+# Remove Out Files
 clean:
 	rm -fv $(OUT_FILES)
 
-# Remove MergeData.Rout
+# Remove merge-data.Rout
 cleanMerge:
 	rm -fv $(MERGE_OUT)
 
